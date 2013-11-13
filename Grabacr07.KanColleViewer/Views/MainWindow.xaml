@@ -87,8 +87,8 @@
 
 		<WebBrowser x:Name="WebBrowser"
 					Grid.Row="1"
-					Width="960"
-					Height="572">
+					Width="800"
+					Height="480">
 			<i:Interaction.Behaviors>
 				<localbehaviors:SetStyleSheetBehavior />
 				<localbehaviors:NavigatorBehavior Navigator="{Binding Navigator}" />
