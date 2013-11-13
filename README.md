@@ -21,6 +21,23 @@ Obviously, the tool does not modify the information or send any new infromation 
 #### Planned Features
 * A lot
 
+### Build Instructions
+1. Download the files
+2. Download and install Visual Studio (any version should work)
+3. Open the .sln solution
+4. Go to Build > Build solution
+5. The resultant executable is located under ``Grabacr07.KanColleViewer/bin/Debug/KanColleViewer.exe``
+
+Note: this version is specifically optimised for usage with the API url.
+When you start the program, there is a navigation bar that you can enter your URL into,
+but if you want to keep using the program, I suggest you edit ``KanColleViewer.exe.config``
+and put your API url in there under the KanColleURL setting. Make sure you change the ``&`` to ``&amp;``
+so the URL looks something like this:
+``` xml
+<setting name="KanColleUrl" serializeAs="String">
+  <value>http://125.6.189.39/kcs/mainD2.swf?api_token=yourapikeygoeshere&amp;api_starttime=sometimestamphere</value>
+</setting>
+```
 
 ### System Requirements
 * Windows 8 or higher
