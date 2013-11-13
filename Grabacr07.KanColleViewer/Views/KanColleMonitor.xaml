@@ -50,7 +50,7 @@
 				</TextBlock>
 
 				<TextBlock>
-					<Run Text="艦隊司令部"
+					<Run Text="Admiral"
 						 FontSize="14" />
 					<Run Text="Lv."
 						 Style="{DynamicResource PickupTextElementStyleKey}"
@@ -92,11 +92,11 @@
 
 					<TextBlock Grid.Row="0"
 							   Grid.Column="1">
-						<Run Text="高速修復材:" />
+						<Run Text="Instant Repairs:" />
 						<Run Text="{Binding Homeport.Materials.Model.InstantRepairMaterials, Mode=OneWay}"
 							 Style="{DynamicResource PickupTextElementStyleKey}" />
 						<LineBreak />
-						<Run Text="高速建造材:" />
+						<Run Text="Instant Builds:" />
 						<Run Text="{Binding Homeport.Materials.Model.InstantBuildMaterials, Mode=OneWay}"
 							 Style="{DynamicResource PickupTextElementStyleKey}" />
 					</TextBlock>
@@ -114,13 +114,13 @@
 
 					<TextBlock Grid.Row="0"
 							   Grid.Column="1">
-						<Run Text="所属艦娘:" />
+						<Run Text="No. of Girls:" />
 						<Run Text="{Binding Homeport.Ships.Count, Mode=OneWay}"
 							 Style="{DynamicResource PickupTextElementStyleKey}" />
 						<Run Text="/" />
 						<Run Text="{Binding Homeport.Admiral.Model.MaxShipCount, Mode=OneWay}" />
 						<LineBreak />
-						<Run Text="保有装備:" />
+						<Run Text="No. of Equip.:" />
 						<Run Text="{Binding Homeport.SlotItems.Count, Mode=OneWay}"
 							 Style="{DynamicResource PickupTextElementStyleKey}" />
 						<Run Text="/" />
@@ -237,7 +237,7 @@
 				<TabItem>
 					<TabItem.HeaderTemplate>
 						<DataTemplate>
-							<TextBlock Text="艦隊"
+							<TextBlock Text="Fleet"
 									   FontSize="15"
 									   Foreground="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type TabItem}}, Path=Foreground}" />
 						</DataTemplate>
@@ -246,7 +246,7 @@
 				</TabItem>
 				<TabItem>
 					<TabItem.Header>
-						<TextBlock Text="入渠ドック"
+						<TextBlock Text="Repair Dock"
 								   FontSize="15"
 								   Foreground="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type TabItem}}, Path=Foreground}" />
 					</TabItem.Header>
@@ -254,7 +254,7 @@
 				</TabItem>
 				<TabItem>
 					<TabItem.Header>
-						<TextBlock Text="建造ドック"
+						<TextBlock Text="Construction Dock"
 								   FontSize="15"
 								   Foreground="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type TabItem}}, Path=Foreground}" />
 					</TabItem.Header>
@@ -262,7 +262,7 @@
 				</TabItem>
 				<TabItem>
 					<TabItem.Header>
-						<TextBlock Text="任務"
+						<TextBlock Text="Quests"
 								   FontSize="15"
 								   Foreground="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type TabItem}}, Path=Foreground}" />
 					</TabItem.Header>
@@ -270,7 +270,7 @@
 				</TabItem>
 				<TabItem>
 					<TabItem.Header>
-						<TextBlock Text="遠征"
+						<TextBlock Text="Expeditions"
 								   FontSize="15"
 								   Foreground="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type TabItem}}, Path=Foreground}" />
 					</TabItem.Header>
@@ -278,7 +278,7 @@
 				</TabItem>
 				<TabItem>
 					<TabItem.Header>
-						<TextBlock Text="設定"
+						<TextBlock Text="Settings"
 								   FontSize="15"
 								   Foreground="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type TabItem}}, Path=Foreground}" />
 					</TabItem.Header>
