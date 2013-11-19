@@ -22,12 +22,24 @@ namespace Grabacr07.KanColleViewer.ViewModels
 
 		public string ReturnTime
 		{
-			get { return source.ReturnTime.HasValue ? source.ReturnTime.Value.LocalDateTime.ToString("MM/dd HH:mm") : "--/-- --:--:--"; }
+			get
+			{
+				return this.source.ReturnTime.HasValue
+					? this.source.ReturnTime.Value.LocalDateTime.ToString("MM/dd HH:mm")
+					: "--/-- --:--";
+			}
 		}
 
 		public string Remaining
 		{
-			get { return source.Remaining.HasValue ? source.Remaining.Value.ToString(@"hh\:mm\:ss") : "--:--:--"; }
+			get
+			{
+				return this.source.Remaining.HasValue
+					? string.Format("{0:D2}:{1}",
+						(int)this.source.Remaining.Value.TotalHours,
+						this.source.Remaining.Value.ToString(@"mm\:ss"))
+					: "--:--:--";
+			}
 		}
 
 		#region IsNotifyReturned 変更通知プロパティ
@@ -62,7 +74,7 @@ namespace Grabacr07.KanColleViewer.ViewModels
 					{
 						Toast.Show(
 							"遠征完了",
-							"'" + args.FleetName + "' が遠征から帰投しました。",
+							"「" + args.FleetName + "」が遠征から帰投しました。",
 							() => this.Messenger.Raise(new WindowActionMessage(WindowAction.Active, "Window/Activate")));
 					}
 				};
