@@ -1,9 +1,8 @@
 KanColleViewer
 --
 
-This is a browser of sorts for KanColle.
-It's a tool to make playing KanColle easier.
-
+This is a browser/tool of sorts to make playing KanColle easier.
+It is primarily developed by [@Grabacr07](https://twitter.com/Grabacr07)
 
 ### About the Project
 The tool uses WPF's web browser control to display the game and FiddlerCore to capture communication data.
@@ -21,7 +20,16 @@ Obviously, the tool does not modify the information or send any new infromation 
 #### Planned Features
 * A lot
 
+### System Requirements
+* Windows 7 or higher
+* .NET Framework 4.5
+
+While the program does run on Windows 7, popup notifications for Expeditions and Construction/Repair timers will cause the program to crash. This is on the list of things to be fixed.
+Not everything has been tested on Windows 7, so please report any issues you encounter.
+
 ### Build Instructions
+NOTE: Windows 8 is required to build it
+
 1. Download the files
 2. Download and install Visual Studio (any version should work)
 3. Open the .sln solution
@@ -38,12 +46,3 @@ so the URL looks something like this:
   <value>http://125.6.189.39/kcs/mainD2.swf?api_token=yourapikeygoeshere&amp;api_starttime=sometimestamphere</value>
 </setting>
 ```
-
-### System Requirements
-* Windows 8 or higher
-* .NET Framework 4.5
-
-[@Grabacr07](https://twitter.com/Grabacr07), the developer, uses Windows 8.1 Pro and Visual Studio Premium 2013 to develop and build this.
-
-While it will run on Windows 7, popup notifications for Expeditions and Construction/Repair timers will cause the program to crash. This is on the list of things to be fixed.
-The program has only been confirmed to work on Windows 8 or above, so if there are any issues on Windows 7, please report it.
