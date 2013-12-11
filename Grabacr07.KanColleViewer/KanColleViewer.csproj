@@ -352,9 +352,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\SmallLogo.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="KanColleViewer.VisualElementsManifest.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
