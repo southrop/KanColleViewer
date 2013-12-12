@@ -138,11 +138,11 @@
     <comment>艦隊司令部</comment>
   </data>
   <data name="Monitor_InstantBuild" xml:space="preserve">
-    <value>Instant Build Material:  </value>
+    <value>Instant Build Materials:  </value>
     <comment>高速建造材:</comment>
   </data>
   <data name="Monitor_InstantRepair" xml:space="preserve">
-    <value>Instant Repair Material:</value>
+    <value>Instant Repair Materials:</value>
     <comment>高速修復材:</comment>
   </data>
   <data name="Monitor_NoOfEquipment" xml:space="preserve">

@@ -6,6 +6,7 @@
 			 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 			 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 			 xmlns:livet="http://schemas.livet-mvvm.net/2011/wpf"
+             xmlns:p="clr-namespace:Grabacr07.KanColleViewer.Properties" 
 			 xmlns:views="clr-namespace:Grabacr07.KanColleViewer.Views"
 			 xmlns:viewModels="clr-namespace:Grabacr07.KanColleViewer.ViewModels"
 			 xmlns:controls="clr-namespace:Grabacr07.KanColleViewer.Views.Controls"
@@ -50,8 +51,8 @@
 				</TextBlock>
 
 				<TextBlock>
-					<Run Text="艦隊司令部"
-						 FontSize="14" />
+					<Run Text="{x:Static p:Resources.Monitor_FleetHq}"
+						 FontSize="14" /> <!-- 艦隊司令部 -->
 					<Run Text="Lv."
 						 Style="{DynamicResource PickupTextElementStyleKey}"
 						 FontSize="14" />
@@ -92,11 +93,11 @@
 
 					<TextBlock Grid.Row="0"
 							   Grid.Column="1">
-						<Run Text="高速修復材:" />
+						<Run Text="{x:Static p:Resources.Monitor_InstantRepair}" /> <!-- 高速修復材: -->
 						<Run Text="{Binding Homeport.Materials.Model.InstantRepairMaterials, Mode=OneWay}"
 							 Style="{DynamicResource PickupTextElementStyleKey}" />
 						<LineBreak />
-						<Run Text="高速建造材:" />
+						<Run Text="{x:Static p:Resources.Monitor_InstantBuild}" /> <!-- 高速建造材: -->
 						<Run Text="{Binding Homeport.Materials.Model.InstantBuildMaterials, Mode=OneWay}"
 							 Style="{DynamicResource PickupTextElementStyleKey}" />
 					</TextBlock>
@@ -114,13 +115,13 @@
 
 					<TextBlock Grid.Row="0"
 							   Grid.Column="1">
-						<Run Text="所属艦娘:" />
+						<Run Text="{x:Static p:Resources.Monitor_NoOfGirls}" /> <!-- 所属艦娘: -->
 						<Run Text="{Binding Homeport.Ships.Count, Mode=OneWay}"
 							 Style="{DynamicResource PickupTextElementStyleKey}" />
 						<Run Text="/" />
 						<Run Text="{Binding Homeport.Admiral.Model.MaxShipCount, Mode=OneWay}" />
 						<LineBreak />
-						<Run Text="保有装備:" />
+						<Run Text="{x:Static p:Resources.Monitor_NoOfEquipment}" /> <!-- 保有装備: -->
 						<Run Text="{Binding Homeport.SlotItems.Count, Mode=OneWay}"
 							 Style="{DynamicResource PickupTextElementStyleKey}" />
 						<Run Text="/" />
@@ -237,50 +238,50 @@
 				<TabItem>
 					<TabItem.HeaderTemplate>
 						<DataTemplate>
-							<TextBlock Text="艦隊"
+                            <TextBlock Text="{x:Static p:Resources.Monitor_Fleet}"
 									   FontSize="15"
-									   Foreground="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type TabItem}}, Path=Foreground}" />
+									   Foreground="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type TabItem}}, Path=Foreground}" /> <!-- 艦隊 -->
 						</DataTemplate>
 					</TabItem.HeaderTemplate>
 					<views:Fleets DataContext="{Binding Homeport.Fleets}" />
 				</TabItem>
 				<TabItem>
 					<TabItem.Header>
-						<TextBlock Text="入渠ドック"
+                        <TextBlock Text="{x:Static p:Resources.Monitor_RepairDock}"
 								   FontSize="15"
-								   Foreground="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type TabItem}}, Path=Foreground}" />
+								   Foreground="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type TabItem}}, Path=Foreground}" /> <!-- 入渠ドック -->
 					</TabItem.Header>
 					<views:Repairyard DataContext="{Binding Homeport.Repairyard}" />
 				</TabItem>
 				<TabItem>
 					<TabItem.Header>
-						<TextBlock Text="建造ドック"
+                        <TextBlock Text="{x:Static p:Resources.Monitor_ConstructionDock}"
 								   FontSize="15"
-								   Foreground="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type TabItem}}, Path=Foreground}" />
+								   Foreground="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type TabItem}}, Path=Foreground}" /> <!-- 建造ドック -->
 					</TabItem.Header>
 					<views:Dockyard DataContext="{Binding Homeport.Dockyard}" />
 				</TabItem>
 				<TabItem>
 					<TabItem.Header>
-						<TextBlock Text="任務"
+                        <TextBlock Text="{x:Static p:Resources.Monitor_Quests}"
 								   FontSize="15"
-								   Foreground="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type TabItem}}, Path=Foreground}" />
+								   Foreground="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type TabItem}}, Path=Foreground}" /> <!-- 任務 -->
 					</TabItem.Header>
 					<views:Quests />
 				</TabItem>
 				<TabItem>
 					<TabItem.Header>
-						<TextBlock Text="遠征"
+                        <TextBlock Text="{x:Static p:Resources.Monitor_Expeditions}"
 								   FontSize="15"
-								   Foreground="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type TabItem}}, Path=Foreground}" />
+								   Foreground="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type TabItem}}, Path=Foreground}" /> <!-- 遠征 -->
 					</TabItem.Header>
 					<views:Expeditions DataContext="{Binding Homeport.Fleets}" />
 				</TabItem>
 				<TabItem>
 					<TabItem.Header>
-						<TextBlock Text="設定"
+                        <TextBlock Text="{x:Static p:Resources.Monitor_Settings}"
 								   FontSize="15"
-								   Foreground="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type TabItem}}, Path=Foreground}" />
+								   Foreground="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type TabItem}}, Path=Foreground}" /> <!-- 設定 -->
 					</TabItem.Header>
 					<views:Settings />
 				</TabItem>

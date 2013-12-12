@@ -121,4 +121,40 @@
   <data name="kancolle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kancolle.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Monitor_InstantRepair" xml:space="preserve">
+    <value>高速修復材:</value>
+  </data>
+  <data name="Monitor_InstantBuild" xml:space="preserve">
+    <value>高速建造材:</value>
+  </data>
+  <data name="Monitor_Fleet" xml:space="preserve">
+    <value>艦隊</value>
+  </data>
+  <data name="Monitor_FleetHq" xml:space="preserve">
+    <value>艦隊司令部</value>
+  </data>
+  <data name="Monitor_RepairDock" xml:space="preserve">
+    <value>入渠ドック</value>
+  </data>
+  <data name="MainWindow_Title" xml:space="preserve">
+    <value>提督業も忙しい！</value>
+  </data>
+  <data name="Monitor_ConstructionDock" xml:space="preserve">
+    <value>建造ドック</value>
+  </data>
+  <data name="Monitor_Expeditions" xml:space="preserve">
+    <value>遠征</value>
+  </data>
+  <data name="Monitor_Quests" xml:space="preserve">
+    <value>任務</value>
+  </data>
+  <data name="Monitor_Settings" xml:space="preserve">
+    <value>設定</value>
+  </data>
+  <data name="Monitor_NoOfEquipment" xml:space="preserve">
+    <value>保有装備:</value>
+  </data>
+  <data name="Monitor_NoOfGirls" xml:space="preserve">
+    <value>所属艦娘:</value>
+  </data>
 </root>

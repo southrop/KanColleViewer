@@ -22,7 +22,7 @@ namespace Grabacr07.KanColleViewer.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace Grabacr07.KanColleViewer.Properties {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Grabacr07.KanColleViewer.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace Grabacr07.KanColleViewer.Properties {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,10 +63,118 @@ namespace Grabacr07.KanColleViewer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon kancolle {
+        public static System.Drawing.Icon kancolle {
             get {
                 object obj = ResourceManager.GetObject("kancolle", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 提督業も忙しい！.
+        /// </summary>
+        public static string MainWindow_Title {
+            get {
+                return ResourceManager.GetString("MainWindow_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 建造ドック.
+        /// </summary>
+        public static string Monitor_ConstructionDock {
+            get {
+                return ResourceManager.GetString("Monitor_ConstructionDock", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 遠征.
+        /// </summary>
+        public static string Monitor_Expeditions {
+            get {
+                return ResourceManager.GetString("Monitor_Expeditions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 艦隊.
+        /// </summary>
+        public static string Monitor_Fleet {
+            get {
+                return ResourceManager.GetString("Monitor_Fleet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 艦隊司令部.
+        /// </summary>
+        public static string Monitor_FleetHq {
+            get {
+                return ResourceManager.GetString("Monitor_FleetHq", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 高速建造材:.
+        /// </summary>
+        public static string Monitor_InstantBuild {
+            get {
+                return ResourceManager.GetString("Monitor_InstantBuild", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 高速修復材:.
+        /// </summary>
+        public static string Monitor_InstantRepair {
+            get {
+                return ResourceManager.GetString("Monitor_InstantRepair", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 保有装備:.
+        /// </summary>
+        public static string Monitor_NoOfEquipment {
+            get {
+                return ResourceManager.GetString("Monitor_NoOfEquipment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 所属艦娘:.
+        /// </summary>
+        public static string Monitor_NoOfGirls {
+            get {
+                return ResourceManager.GetString("Monitor_NoOfGirls", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 任務.
+        /// </summary>
+        public static string Monitor_Quests {
+            get {
+                return ResourceManager.GetString("Monitor_Quests", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 入渠ドック.
+        /// </summary>
+        public static string Monitor_RepairDock {
+            get {
+                return ResourceManager.GetString("Monitor_RepairDock", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 設定.
+        /// </summary>
+        public static string Monitor_Settings {
+            get {
+                return ResourceManager.GetString("Monitor_Settings", resourceCulture);
             }
         }
     }

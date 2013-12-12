@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Grabacr07.KanColleWrapper;
 using Livet;
 using Livet.EventListeners;
+using System.Resources;
+using System.Reflection;
 
 namespace Grabacr07.KanColleViewer.ViewModels
 {
@@ -70,7 +72,9 @@ namespace Grabacr07.KanColleViewer.ViewModels
 
 		public MainWindowViewModel()
 		{
-			this.Title = "提督業も忙しい！";
+            ResourceManager rm = new ResourceManager("Grabacr07.KanColleViewer.Properties.Resources", Assembly.GetExecutingAssembly());
+
+			this.Title = rm.GetString("MainWindow_Title");
 			this.Navigator = new NavigatorViewModel();
 
 			this.Content = new NotStartedViewModel();
