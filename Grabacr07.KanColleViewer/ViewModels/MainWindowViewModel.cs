@@ -72,7 +72,7 @@ namespace Grabacr07.KanColleViewer.ViewModels
 
 		public MainWindowViewModel()
 		{
-            ResourceManager rm = new ResourceManager("Grabacr07.KanColleViewer.Properties.Resources", Assembly.GetExecutingAssembly());
+			ResourceManager rm = new ResourceManager("Grabacr07.KanColleViewer.Properties.Resources", Assembly.GetExecutingAssembly());
 
 			this.Title = rm.GetString("MainWindow_Title");
 			this.Navigator = new NavigatorViewModel();

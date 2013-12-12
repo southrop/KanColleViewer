@@ -6,7 +6,7 @@
 			 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 			 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 			 xmlns:livet="http://schemas.livet-mvvm.net/2011/wpf"
-             xmlns:p="clr-namespace:Grabacr07.KanColleViewer.Properties" 
+			 xmlns:p="clr-namespace:Grabacr07.KanColleViewer.Properties" 
 			 xmlns:views="clr-namespace:Grabacr07.KanColleViewer.Views"
 			 xmlns:viewModels="clr-namespace:Grabacr07.KanColleViewer.ViewModels"
 			 xmlns:controls="clr-namespace:Grabacr07.KanColleViewer.Views.Controls"
@@ -238,7 +238,7 @@
 				<TabItem>
 					<TabItem.HeaderTemplate>
 						<DataTemplate>
-                            <TextBlock Text="{x:Static p:Resources.Monitor_Fleet}"
+							<TextBlock Text="{x:Static p:Resources.Monitor_Fleet}"
 									   FontSize="15"
 									   Foreground="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type TabItem}}, Path=Foreground}" /> <!-- 艦隊 -->
 						</DataTemplate>
@@ -247,7 +247,7 @@
 				</TabItem>
 				<TabItem>
 					<TabItem.Header>
-                        <TextBlock Text="{x:Static p:Resources.Monitor_RepairDock}"
+						<TextBlock Text="{x:Static p:Resources.Monitor_RepairDock}"
 								   FontSize="15"
 								   Foreground="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type TabItem}}, Path=Foreground}" /> <!-- 入渠ドック -->
 					</TabItem.Header>
@@ -255,7 +255,7 @@
 				</TabItem>
 				<TabItem>
 					<TabItem.Header>
-                        <TextBlock Text="{x:Static p:Resources.Monitor_ConstructionDock}"
+						<TextBlock Text="{x:Static p:Resources.Monitor_ConstructionDock}"
 								   FontSize="15"
 								   Foreground="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type TabItem}}, Path=Foreground}" /> <!-- 建造ドック -->
 					</TabItem.Header>
@@ -263,7 +263,7 @@
 				</TabItem>
 				<TabItem>
 					<TabItem.Header>
-                        <TextBlock Text="{x:Static p:Resources.Monitor_Quests}"
+						<TextBlock Text="{x:Static p:Resources.Monitor_Quests}"
 								   FontSize="15"
 								   Foreground="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type TabItem}}, Path=Foreground}" /> <!-- 任務 -->
 					</TabItem.Header>
@@ -271,7 +271,7 @@
 				</TabItem>
 				<TabItem>
 					<TabItem.Header>
-                        <TextBlock Text="{x:Static p:Resources.Monitor_Expeditions}"
+						<TextBlock Text="{x:Static p:Resources.Monitor_Expeditions}"
 								   FontSize="15"
 								   Foreground="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type TabItem}}, Path=Foreground}" /> <!-- 遠征 -->
 					</TabItem.Header>
@@ -279,7 +279,7 @@
 				</TabItem>
 				<TabItem>
 					<TabItem.Header>
-                        <TextBlock Text="{x:Static p:Resources.Monitor_Settings}"
+						<TextBlock Text="{x:Static p:Resources.Monitor_Settings}"
 								   FontSize="15"
 								   Foreground="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type TabItem}}, Path=Foreground}" /> <!-- 設定 -->
 					</TabItem.Header>
