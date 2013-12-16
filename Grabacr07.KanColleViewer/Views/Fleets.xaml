@@ -5,6 +5,7 @@
              xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+			 xmlns:p="clr-namespace:Grabacr07.KanColleViewer.Properties"
              xmlns:livet="http://schemas.livet-mvvm.net/2011/wpf"
              xmlns:fleets="clr-namespace:Grabacr07.KanColleViewer.ViewModels.Fleets"
              xmlns:controls="clr-namespace:Grabacr07.KanColleViewer.Views.Controls"
@@ -78,10 +79,10 @@
 					<Border Padding="10,5"
 					        Background="#FF204080">
 						<TextBlock Foreground="{DynamicResource ActiveForegroundBrushKey}">
-							<Run Text="この艦隊は遠征中です。" />
-							<Run Text=" 完了時刻:" />
+							<Run Text="{x:Static p:Resources.Fleet_Exped}" />
+							<Run Text="{x:Static p:Resources.Fleet_ExpedCompletion}" />
 							<Run Text="{Binding ReturnTime, Mode=OneWay}" />
-							<Run Text=" 帰投まで:" />
+							<Run Text="{x:Static p:Resources.Fleet_ExpedRemaining}" />
 							<Run Text="{Binding Remaining, Mode=OneWay}" />
 						</TextBlock>
 					</Border>

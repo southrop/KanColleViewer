@@ -157,4 +157,148 @@
   <data name="Monitor_NoOfGirls" xml:space="preserve">
     <value>所属艦娘:</value>
   </data>
+  <data name="Repairyard_DockedShip" xml:space="preserve">
+    <value>入渠中の艦</value>
+  </data>
+  <data name="Repairyard_Locked" xml:space="preserve">
+    <value>ロックされています</value>
+  </data>
+  <data name="Repairyard_TimeCompletion" xml:space="preserve">
+    <value>完了時刻</value>
+  </data>
+  <data name="Repairyard_TimeRemaining" xml:space="preserve">
+    <value>整備完了まで</value>
+  </data>
+  <data name="Repairyard_Unused" xml:space="preserve">
+    <value>未使用</value>
+  </data>
+  <data name="Settings_Browser" xml:space="preserve">
+    <value>ブラウザー操作</value>
+  </data>
+  <data name="Settings_Language" xml:space="preserve">
+    <value>言語</value>
+  </data>
+  <data name="Settings_LanguageEn" xml:space="preserve">
+    <value>英 語 — English</value>
+  </data>
+  <data name="Settings_LanguageJa" xml:space="preserve">
+    <value>日本語 — Japanese</value>
+  </data>
+  <data name="Settings_Screenshot" xml:space="preserve">
+    <value>スクリーンショット設定</value>
+  </data>
+  <data name="Settings_ScreenshotFolder" xml:space="preserve">
+    <value>保存先フォルダー  </value>
+  </data>
+  <data name="Settings_ScreenshotFolderPath" xml:space="preserve">
+    <value>保存先フォルダー パス</value>
+  </data>
+  <data name="Dockyard_BuildShip" xml:space="preserve">
+    <value>建造中の艦</value>
+  </data>
+  <data name="Dockyard_DisplaySettings" xml:space="preserve">
+    <value>表示設定</value>
+  </data>
+  <data name="Dockyard_Locked" xml:space="preserve">
+    <value>ロックされています</value>
+  </data>
+  <data name="Dockyard_Spoiler" xml:space="preserve">
+    <value>建造中の艦名をネタバレする</value>
+  </data>
+  <data name="Dockyard_TimeCompletion" xml:space="preserve">
+    <value>完成時刻</value>
+  </data>
+  <data name="Dockyard_TimeRemaining" xml:space="preserve">
+    <value>建造完了まで</value>
+  </data>
+  <data name="Dockyard_Unused" xml:space="preserve">
+    <value>未使用</value>
+  </data>
+  <data name="Notification_Disable" xml:space="preserve">
+    <value>通知しない</value>
+  </data>
+  <data name="Notification_EnableRepair" xml:space="preserve">
+    <value>整備完了時にトースト通知を表示する</value>
+  </data>
+  <data name="Notification_Individual" xml:space="preserve">
+    <value>ドックごとに個別に設定する</value>
+  </data>
+  <data name="Notification_NotYet" xml:space="preserve">
+    <value>(未実装)</value>
+  </data>
+  <data name="Notification_Settings" xml:space="preserve">
+    <value>通知設定</value>
+  </data>
+  <data name="Notification_Win8" xml:space="preserve">
+    <value>(Windows 8 以降)</value>
+  </data>
+  <data name="Browser_Back" xml:space="preserve">
+    <value>前のページに戻る</value>
+  </data>
+  <data name="Browser_Forward" xml:space="preserve">
+    <value>次のページに進む</value>
+  </data>
+  <data name="Browser_Reload" xml:space="preserve">
+    <value>ページのリロード</value>
+  </data>
+  <data name="Browser_URL" xml:space="preserve">
+    <value>URL を入力し、Enter キーで移動します。</value>
+  </data>
+  <data name="Notification_EnableDock" xml:space="preserve">
+    <value>建造完了時にトースト通知を表示する</value>
+  </data>
+  <data name="Notification_EnableExped" xml:space="preserve">
+    <value>遠征帰投時にトースト通知を表示する</value>
+  </data>
+  <data name="Dockyard_Complete" xml:space="preserve">
+    <value>完成！</value>
+  </data>
+  <data name="Exped_NoExped" xml:space="preserve">
+    <value>遠征に出ていません。</value>
+  </data>
+  <data name="Exped_TimeCompletion" xml:space="preserve">
+    <value>終了時刻</value>
+  </data>
+  <data name="Exped_TimeRemaining" xml:space="preserve">
+    <value>艦隊帰投まで</value>
+  </data>
+  <data name="Fleet_Exped" xml:space="preserve">
+    <value>この艦隊は遠征中です。</value>
+  </data>
+  <data name="Fleet_ExpedCompletion" xml:space="preserve">
+    <value> 完了時刻:</value>
+  </data>
+  <data name="Fleet_ExpedRemaining" xml:space="preserve">
+    <value> 帰投まで:</value>
+  </data>
+  <data name="Notification_IndividualExped" xml:space="preserve">
+    <value>艦隊ごとに個別に設定する</value>
+  </data>
+  <data name="NotStarted" xml:space="preserve">
+    <value>艦これの開始を待っています...</value>
+  </data>
+  <data name="Quests_NotYet" xml:space="preserve">
+    <value>未実装です</value>
+  </data>
+  <data name="Exped_Complete" xml:space="preserve">
+    <value>遠征完了</value>
+  </data>
+  <data name="Exped_Return" xml:space="preserve">
+    <value>が遠征から帰投しました。</value>
+  </data>
+  <data name="Fleet_CanReSortie" xml:space="preserve">
+    <value>出撃可能！</value>
+  </data>
+  <data name="Repairyard_Complete" xml:space="preserve">
+    <value>整備完了</value>
+  </data>
+  <data name="Repairyard_Finished1" xml:space="preserve">
+    <value>入渠第 </value>
+  </data>
+  <data name="Repairyard_Finished2" xml:space="preserve">
+    <value> ドックでの</value>
+  </data>
+  <data name="Repairyard_Finished3" xml:space="preserve">
+    <value>の整備が完了しました。</value>
+  </data>
 </root>

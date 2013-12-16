@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Linq;
-using System.Threading.Tasks;
+using System.Threading;
 using System.Windows;
 using Grabacr07.KanColleViewer.Model;
 using Grabacr07.KanColleViewer.ViewModels;
@@ -11,6 +11,7 @@ using Grabacr07.KanColleViewer.Views;
 using Grabacr07.KanColleWrapper;
 using AppSettings = Grabacr07.KanColleViewer.Properties.Settings;
 using Settings = Grabacr07.KanColleViewer.Model.Settings;
+using System.Globalization;
 
 namespace Grabacr07.KanColleViewer
 {
@@ -27,6 +28,11 @@ namespace Grabacr07.KanColleViewer
 
 			KanColleClient.Current.Proxy.Startup(AppSettings.Default.LocalProxyPort);
 			Settings.Load();
+
+			if (Settings.Current.English)
+			{
+				Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
+			}
 
 			if (Toast.IsSupported)
 			{

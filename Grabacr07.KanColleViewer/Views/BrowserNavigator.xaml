@@ -5,6 +5,7 @@
 			 xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions"
 			 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 			 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+			 xmlns:p="clr-namespace:Grabacr07.KanColleViewer.Properties"
 			 xmlns:livet="http://schemas.livet-mvvm.net/2011/wpf"
 			 xmlns:views="clr-namespace:Grabacr07.KanColleViewer.Views"
 			 xmlns:viewModels="clr-namespace:Grabacr07.KanColleViewer.ViewModels"
@@ -25,7 +26,7 @@
 		<controls:NavigationButton Width="40"
 								   Height="40"
 								   IsEnabled="{Binding CanGoBack}"
-								   ToolTip="前のページに戻る">
+								   ToolTip="{x:Static p:Resources.Browser_Back}">
 			<i:Interaction.Triggers>
 				<i:EventTrigger EventName="Click">
 					<livet:LivetCallMethodAction MethodTarget="{Binding}"
@@ -36,7 +37,7 @@
 
 		<controls:NavigationButton Grid.Column="1"
 								   Direction="GoForward"
-								   ToolTip="次のページに進む"
+								   ToolTip="{x:Static p:Resources.Browser_Forward}"
 								   IsEnabled="{Binding CanGoForward}"
 								   Width="{Binding ElementName=UrlBox, Path=ActualHeight}"
 								   Height="{Binding ElementName=UrlBox, Path=ActualHeight}"
@@ -52,7 +53,7 @@
 		<common:PromptTextBox Grid.Column="2"
 							  x:Name="UrlBox"
 							  Text="{Binding SourceString, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-							  Prompt="URL を入力し、Enter キーで移動します。"
+							  Prompt="{x:Static p:Resources.Browser_URL}"
 							  VerticalAlignment="Center"
 							  VerticalContentAlignment="Center"
 							  Padding="2,2">
@@ -64,7 +65,7 @@
 
 		<controls:NavigationButton Grid.Column="3"
 								   Direction="Reload"
-								   ToolTip="ページのリロード"
+								   ToolTip="{x:Static p:Resources.Browser_Reload}"
 								   Width="{Binding ElementName=UrlBox, Path=ActualHeight}"
 								   Height="{Binding ElementName=UrlBox, Path=ActualHeight}"
 								   Margin="4,0,0,0">

@@ -18,6 +18,22 @@ namespace Grabacr07.KanColleViewer.ViewModels
 			set { Settings.Current.ScreenshotFolder = value; }
 		}
 
+		#region IsEnglish 変更通知プロパティ
+
+		public bool IsEnglish
+		{
+			get { return Settings.Current.English; }
+			set { 
+				if (Settings.Current.English != value)
+				{
+					Settings.Current.English = value;
+					this.RaisePropertyChanged();
+				}
+			}
+		}
+
+		#endregion
+
 		public SettingsViewModel()
 		{
 			this.CompositeDisposable.Add(new PropertyChangedEventListener(Settings.Current)

@@ -42,6 +42,7 @@ namespace Grabacr07.KanColleViewer.Model
 				ScreenshotFolder = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures),
 				ScreenshotFilename = "KanColle-{0:d04}.png",
 				CanDisplayBuildingShipName = false,
+				English = true,
 			};
 		}
 
@@ -171,6 +172,24 @@ namespace Grabacr07.KanColleViewer.Model
 
 		#endregion
 
+		#region English 変更通知プロパティ
+
+		private bool _English;
+
+		public bool English
+		{
+			get { return this._English; }
+			set
+			{
+				if (this._English != value)
+				{
+					this._English = value;
+					this.RaisePropertyChanged();
+				}
+			}
+		}
+
+		#endregion
 
 		public void Save()
 		{

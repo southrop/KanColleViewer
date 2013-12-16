@@ -5,6 +5,7 @@
              xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+			 xmlns:p="clr-namespace:Grabacr07.KanColleViewer.Properties"
              xmlns:livet="http://schemas.livet-mvvm.net/2011/wpf"
              xmlns:views="clr-namespace:Grabacr07.KanColleViewer.Views"
              xmlns:viewModels="clr-namespace:Grabacr07.KanColleViewer.ViewModels"
@@ -19,7 +20,7 @@
 			<TextBlock Text="(｡ŏ﹏ŏ) "
 			           FontSize="56"
 			           VerticalAlignment="Center" />
-			<TextBlock Text="未実装です"
+			<TextBlock Text="{x:Static p:Resources.Quests_NotYet}"
 			           FontSize="72"
 			           VerticalAlignment="Center" />
 		</StackPanel>

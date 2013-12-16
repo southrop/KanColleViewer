@@ -2,7 +2,8 @@ KanColleViewer
 --
 
 This is a browser/tool of sorts to make playing KanColle easier.
-It is primarily developed by [@Grabacr07](https://twitter.com/Grabacr07)
+
+KanColleViewer is primarily developed by [@Grabacr07](https://twitter.com/Grabacr07). This fork has improvements by [@Southrop113](https://twitter.com/southrop113).
 
 ### About the Project
 The tool uses WPF's web browser control to display the game and FiddlerCore to capture communication data.
@@ -16,6 +17,8 @@ Obviously, the tool does not modify the information or send any new infromation 
 * Expedition status and notifications for when the timers end
 * Screenshots
 * Mute audio
+
+* English support
 
 #### Planned Features
 * A lot
@@ -43,6 +46,6 @@ and put your API url in there under the KanColleURL setting. Make sure you chang
 so the URL looks something like this:
 ``` xml
 <setting name="KanColleUrl" serializeAs="String">
-  <value>http://125.6.189.39/kcs/mainD2.swf?api_token=yourapikeygoeshere&amp;api_starttime=sometimestamphere</value>
+  <value>http://server.ip.goes.here/kcs/mainD2.swf?api_token=yourapikeygoeshere&amp;api_starttime=sometimestamphere</value>
 </setting>
 ```

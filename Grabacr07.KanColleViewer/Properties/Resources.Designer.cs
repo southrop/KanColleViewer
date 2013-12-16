@@ -61,6 +61,195 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 前のページに戻る.
+        /// </summary>
+        public static string Browser_Back {
+            get {
+                return ResourceManager.GetString("Browser_Back", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 次のページに進む.
+        /// </summary>
+        public static string Browser_Forward {
+            get {
+                return ResourceManager.GetString("Browser_Forward", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ページのリロード.
+        /// </summary>
+        public static string Browser_Reload {
+            get {
+                return ResourceManager.GetString("Browser_Reload", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to URL を入力し、Enter キーで移動します。.
+        /// </summary>
+        public static string Browser_URL {
+            get {
+                return ResourceManager.GetString("Browser_URL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 建造中の艦.
+        /// </summary>
+        public static string Dockyard_BuildShip {
+            get {
+                return ResourceManager.GetString("Dockyard_BuildShip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 完成！.
+        /// </summary>
+        public static string Dockyard_Complete {
+            get {
+                return ResourceManager.GetString("Dockyard_Complete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 表示設定.
+        /// </summary>
+        public static string Dockyard_DisplaySettings {
+            get {
+                return ResourceManager.GetString("Dockyard_DisplaySettings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ロックされています.
+        /// </summary>
+        public static string Dockyard_Locked {
+            get {
+                return ResourceManager.GetString("Dockyard_Locked", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 建造中の艦名をネタバレする.
+        /// </summary>
+        public static string Dockyard_Spoiler {
+            get {
+                return ResourceManager.GetString("Dockyard_Spoiler", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 完成時刻.
+        /// </summary>
+        public static string Dockyard_TimeCompletion {
+            get {
+                return ResourceManager.GetString("Dockyard_TimeCompletion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 建造完了まで.
+        /// </summary>
+        public static string Dockyard_TimeRemaining {
+            get {
+                return ResourceManager.GetString("Dockyard_TimeRemaining", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 未使用.
+        /// </summary>
+        public static string Dockyard_Unused {
+            get {
+                return ResourceManager.GetString("Dockyard_Unused", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 遠征完了.
+        /// </summary>
+        public static string Exped_Complete {
+            get {
+                return ResourceManager.GetString("Exped_Complete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 遠征に出ていません。.
+        /// </summary>
+        public static string Exped_NoExped {
+            get {
+                return ResourceManager.GetString("Exped_NoExped", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to が遠征から帰投しました。.
+        /// </summary>
+        public static string Exped_Return {
+            get {
+                return ResourceManager.GetString("Exped_Return", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 終了時刻.
+        /// </summary>
+        public static string Exped_TimeCompletion {
+            get {
+                return ResourceManager.GetString("Exped_TimeCompletion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 艦隊帰投まで.
+        /// </summary>
+        public static string Exped_TimeRemaining {
+            get {
+                return ResourceManager.GetString("Exped_TimeRemaining", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 出撃可能！.
+        /// </summary>
+        public static string Fleet_CanReSortie {
+            get {
+                return ResourceManager.GetString("Fleet_CanReSortie", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to この艦隊は遠征中です。.
+        /// </summary>
+        public static string Fleet_Exped {
+            get {
+                return ResourceManager.GetString("Fleet_Exped", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  完了時刻:.
+        /// </summary>
+        public static string Fleet_ExpedCompletion {
+            get {
+                return ResourceManager.GetString("Fleet_ExpedCompletion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  帰投まで:.
+        /// </summary>
+        public static string Fleet_ExpedRemaining {
+            get {
+                return ResourceManager.GetString("Fleet_ExpedRemaining", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
         public static System.Drawing.Icon kancolle {
@@ -175,6 +364,249 @@ namespace Grabacr07.KanColleViewer.Properties {
         public static string Monitor_Settings {
             get {
                 return ResourceManager.GetString("Monitor_Settings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 通知しない.
+        /// </summary>
+        public static string Notification_Disable {
+            get {
+                return ResourceManager.GetString("Notification_Disable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 建造完了時にトースト通知を表示する.
+        /// </summary>
+        public static string Notification_EnableDock {
+            get {
+                return ResourceManager.GetString("Notification_EnableDock", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 遠征帰投時にトースト通知を表示する.
+        /// </summary>
+        public static string Notification_EnableExped {
+            get {
+                return ResourceManager.GetString("Notification_EnableExped", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 整備完了時にトースト通知を表示する.
+        /// </summary>
+        public static string Notification_EnableRepair {
+            get {
+                return ResourceManager.GetString("Notification_EnableRepair", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ドックごとに個別に設定する.
+        /// </summary>
+        public static string Notification_Individual {
+            get {
+                return ResourceManager.GetString("Notification_Individual", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 艦隊ごとに個別に設定する.
+        /// </summary>
+        public static string Notification_IndividualExped {
+            get {
+                return ResourceManager.GetString("Notification_IndividualExped", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (未実装).
+        /// </summary>
+        public static string Notification_NotYet {
+            get {
+                return ResourceManager.GetString("Notification_NotYet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 通知設定.
+        /// </summary>
+        public static string Notification_Settings {
+            get {
+                return ResourceManager.GetString("Notification_Settings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (Windows 8 以降).
+        /// </summary>
+        public static string Notification_Win8 {
+            get {
+                return ResourceManager.GetString("Notification_Win8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 艦これの開始を待っています....
+        /// </summary>
+        public static string NotStarted {
+            get {
+                return ResourceManager.GetString("NotStarted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 未実装です.
+        /// </summary>
+        public static string Quests_NotYet {
+            get {
+                return ResourceManager.GetString("Quests_NotYet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 整備完了.
+        /// </summary>
+        public static string Repairyard_Complete {
+            get {
+                return ResourceManager.GetString("Repairyard_Complete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 入渠中の艦.
+        /// </summary>
+        public static string Repairyard_DockedShip {
+            get {
+                return ResourceManager.GetString("Repairyard_DockedShip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 入渠第 .
+        /// </summary>
+        public static string Repairyard_Finished1 {
+            get {
+                return ResourceManager.GetString("Repairyard_Finished1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  ドックでの.
+        /// </summary>
+        public static string Repairyard_Finished2 {
+            get {
+                return ResourceManager.GetString("Repairyard_Finished2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to の整備が完了しました。.
+        /// </summary>
+        public static string Repairyard_Finished3 {
+            get {
+                return ResourceManager.GetString("Repairyard_Finished3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ロックされています.
+        /// </summary>
+        public static string Repairyard_Locked {
+            get {
+                return ResourceManager.GetString("Repairyard_Locked", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 完了時刻.
+        /// </summary>
+        public static string Repairyard_TimeCompletion {
+            get {
+                return ResourceManager.GetString("Repairyard_TimeCompletion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 整備完了まで.
+        /// </summary>
+        public static string Repairyard_TimeRemaining {
+            get {
+                return ResourceManager.GetString("Repairyard_TimeRemaining", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 未使用.
+        /// </summary>
+        public static string Repairyard_Unused {
+            get {
+                return ResourceManager.GetString("Repairyard_Unused", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ブラウザー操作.
+        /// </summary>
+        public static string Settings_Browser {
+            get {
+                return ResourceManager.GetString("Settings_Browser", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 言語.
+        /// </summary>
+        public static string Settings_Language {
+            get {
+                return ResourceManager.GetString("Settings_Language", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 英 語 — English.
+        /// </summary>
+        public static string Settings_LanguageEn {
+            get {
+                return ResourceManager.GetString("Settings_LanguageEn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 日本語 — Japanese.
+        /// </summary>
+        public static string Settings_LanguageJa {
+            get {
+                return ResourceManager.GetString("Settings_LanguageJa", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to スクリーンショット設定.
+        /// </summary>
+        public static string Settings_Screenshot {
+            get {
+                return ResourceManager.GetString("Settings_Screenshot", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 保存先フォルダー  .
+        /// </summary>
+        public static string Settings_ScreenshotFolder {
+            get {
+                return ResourceManager.GetString("Settings_ScreenshotFolder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 保存先フォルダー パス.
+        /// </summary>
+        public static string Settings_ScreenshotFolderPath {
+            get {
+                return ResourceManager.GetString("Settings_ScreenshotFolderPath", resourceCulture);
             }
         }
     }

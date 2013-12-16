@@ -5,6 +5,7 @@
 			 xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions"
 			 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 			 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+			 xmlns:p="clr-namespace:Grabacr07.KanColleViewer.Properties" 
 			 xmlns:livet="http://schemas.livet-mvvm.net/2011/wpf"
 			 xmlns:fleets="clr-namespace:Grabacr07.KanColleViewer.ViewModels.Fleets"
 			 xmlns:controls="clr-namespace:Grabacr07.KanColleViewer.Views.Controls"
@@ -64,7 +65,7 @@
 									   Grid.Column="1"
 									   VerticalAlignment="Center"
 									   Margin="10,0">
-								<Run Text="建造中の艦"
+								<Run Text="{x:Static p:Resources.Dockyard_BuildShip}"
 									 FontSize="14" />
 								<LineBreak />
 								<Run Text="{Binding Ship, Mode=OneWay}"
@@ -75,7 +76,7 @@
 									   Grid.Column="2"
 									   VerticalAlignment="Center"
 									   Margin="10,0">
-								<Run Text="完成時刻"
+								<Run Text="{x:Static p:Resources.Dockyard_TimeCompletion}"
 									 FontSize="14" />
 								<LineBreak />
 								<Run Text="{Binding CompleteTime, Mode=OneWay}"
@@ -86,7 +87,7 @@
 									   Grid.Column="3"
 									   VerticalAlignment="Center"
 									   Margin="10,0">
-								<Run Text="建造完了まで"
+								<Run Text="{x:Static p:Resources.Dockyard_TimeRemaining}"
 									 FontSize="14" />
 								<LineBreak />
 								<Run Text="{Binding Remaining, Mode=OneWay}"
@@ -101,7 +102,7 @@
 									   VerticalAlignment="Center"
 									   Margin="30,0"
 									   Visibility="Collapsed">
-								<Run Text="未使用"
+								<Run Text="{x:Static p:Resources.Dockyard_Unused}"
 									 FontSize="18" />
 							</TextBlock>
 							<TextBlock x:Name="LockedMessage"
@@ -111,7 +112,7 @@
 									   VerticalAlignment="Center"
 									   Margin="30,0"
 									   Visibility="Collapsed">
-								<Run Text="ロックされています"
+								<Run Text="{x:Static p:Resources.Dockyard_Locked}"
 									 FontSize="18" />
 							</TextBlock>
 							<TextBlock x:Name="CompletedMessage"
@@ -121,7 +122,7 @@
 									   VerticalAlignment="Center"
 									   Margin="30,0"
 									   Visibility="Collapsed">
-								<Run Text="完成！"
+								<Run Text="{x:Static p:Resources.Dockyard_Complete}"
 									 FontSize="18"
 									 Style="{DynamicResource PickupTextElementStyleKey}" />
 							</TextBlock>
@@ -194,12 +195,12 @@
 					VerticalAlignment="Bottom">
 			<StackPanel Margin="10">
 				<TextBlock Margin="5">
-					<Run Text="表示設定"
+					<Run Text="{x:Static p:Resources.Dockyard_DisplaySettings}"
 						 Style="{DynamicResource PickupTextElementStyleKey}" />
 				</TextBlock>
 				<CheckBox Margin="8,5"
 						  IsChecked="{Binding CanDisplayShipName, Mode=TwoWay}">
-					<TextBlock Text="建造中の艦名をネタバレする" />
+					<TextBlock Text="{x:Static p:Resources.Dockyard_Spoiler}" />
 				</CheckBox>
 			</StackPanel>
 
@@ -217,25 +218,25 @@
 					</Style>
 				</StackPanel.Style>
 				<TextBlock Margin="5">
-					<Run Text="通知設定"
+					<Run Text="{x:Static p:Resources.Notification_Settings}"
 						 Style="{DynamicResource PickupTextElementStyleKey}" />
-					<Run Text="(Windows 8 以降)" />
+					<Run Text="{x:Static p:Resources.Notification_Win8}" />
 				</TextBlock>
 				<RadioButton Margin="8,5"
 							 IsChecked="{Binding IsNotifyCompleted}">
-					<TextBlock Text="建造完了時にトースト通知を表示する" />
+					<TextBlock Text="{x:Static p:Resources.Notification_EnableDock}" />
 				</RadioButton>
 				<RadioButton Margin="8,5"
 							 IsEnabled="False">
 					<TextBlock>
-						<Run Text="ドックごとに個別に設定する"
+						<Run Text="{x:Static p:Resources.Notification_Individual}"
 							 TextDecorations="Strikethrough" />
-						<Run Text="(未実装)" />
+						<Run Text="{x:Static p:Resources.Notification_NotYet}" />
 					</TextBlock>
 				</RadioButton>
 				<RadioButton Margin="8,5"
 							 IsChecked="True">
-					<TextBlock Text="通知しない" />
+					<TextBlock Text="{x:Static p:Resources.Notification_Disable}" />
 				</RadioButton>
 			</StackPanel>
 		</StackPanel>

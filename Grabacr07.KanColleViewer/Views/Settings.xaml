@@ -5,6 +5,7 @@
 			 xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions"
 			 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 			 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+			 xmlns:p="clr-namespace:Grabacr07.KanColleViewer.Properties" 
 			 xmlns:livet="http://schemas.livet-mvvm.net/2011/wpf"
 			 xmlns:views="clr-namespace:Grabacr07.KanColleViewer.Views"
 			 xmlns:viewModels="clr-namespace:Grabacr07.KanColleViewer.ViewModels"
@@ -19,7 +20,7 @@
 	<StackPanel Margin="10,0">
 		<StackPanel>
 			<TextBlock>
-				<Run Text="ブラウザー操作"
+				<Run Text="{x:Static p:Resources.Settings_Browser}"
 					 Style="{DynamicResource PickupTextElementStyleKey}" />
 			</TextBlock>
 
@@ -33,7 +34,7 @@
 		
 		<StackPanel Margin="0,12">
 			<TextBlock>
-				<Run Text="スクリーンショット設定"
+				<Run Text="{x:Static p:Resources.Settings_Screenshot}"
 					 Style="{DynamicResource PickupTextElementStyleKey}" />
 			</TextBlock>
 			<Grid Margin="10,6,10,0">
@@ -46,13 +47,13 @@
 					<ColumnDefinition Width="*" />
 					<ColumnDefinition Width="Auto" />
 				</Grid.ColumnDefinitions>
-				<TextBlock Text="保存先フォルダー  "
+				<TextBlock Text="{x:Static p:Resources.Settings_ScreenshotFolder}"
 						   VerticalAlignment="Center"
 						   Margin="0,6" />
 				<controls:PromptTextBox Grid.Row="0"
 										Grid.Column="1"
 										Text="{Binding ScreenshotFolder}"
-										Prompt="保存先フォルダー パス"
+										Prompt="{x:Static p:Resources.Settings_ScreenshotFolderPath}"
 										Padding="2" />
 				<!--<TextBlock Grid.Row="1"
 					   Text="ファイル名: "
@@ -66,6 +67,27 @@
 									Padding="2" />-->
 			</Grid>
 		</StackPanel>
+		
+		<Rectangle Height="1"
+				   Style="{DynamicResource SeparatorRectangleStyleKey}" />
+
+		<StackPanel Margin="0,12">
+			<TextBlock>
+					<Run Text="{x:Static p:Resources.Settings_Language}"
+						 Style="{DynamicResource PickupTextElementStyleKey}" />
+			</TextBlock>
+			<StackPanel Margin="10,10,10,4">
+				<RadioButton Margin="0,5"
+							 IsChecked="True">
+					<TextBlock Text="{x:Static p:Resources.Settings_LanguageJa}" />
+				</RadioButton>
+				<RadioButton Margin="0,5"
+							 IsChecked="{Binding IsEnglish}">
+					<TextBlock Text="{x:Static p:Resources.Settings_LanguageEn}" />
+				</RadioButton>
+			</StackPanel>
+		</StackPanel>
+
 		<Rectangle Height="1"
 				   Style="{DynamicResource SeparatorRectangleStyleKey}" />
 	</StackPanel>

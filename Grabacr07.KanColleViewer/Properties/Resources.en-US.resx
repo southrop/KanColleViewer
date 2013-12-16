@@ -117,6 +117,78 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Browser_Back" xml:space="preserve">
+    <value>Back</value>
+    <comment>前のページに戻る</comment>
+  </data>
+  <data name="Browser_Forward" xml:space="preserve">
+    <value>Forward</value>
+    <comment>次のページに進む</comment>
+  </data>
+  <data name="Browser_Reload" xml:space="preserve">
+    <value>Reload the page</value>
+    <comment>ページのリロード</comment>
+  </data>
+  <data name="Browser_URL" xml:space="preserve">
+    <value>Enter a URL and hit the Enter key</value>
+    <comment>URL を入力し、Enter キーで移動します。</comment>
+  </data>
+  <data name="Dockyard_BuildShip" xml:space="preserve">
+    <value>Ship In Progress</value>
+    <comment>建造中の艦</comment>
+  </data>
+  <data name="Dockyard_Complete" xml:space="preserve">
+    <value>Completed!</value>
+    <comment>完成！</comment>
+  </data>
+  <data name="Dockyard_DisplaySettings" xml:space="preserve">
+    <value>Display Settings</value>
+    <comment>表示設定</comment>
+  </data>
+  <data name="Dockyard_Locked" xml:space="preserve">
+    <value>Locked</value>
+    <comment>ロックされています</comment>
+  </data>
+  <data name="Dockyard_Spoiler" xml:space="preserve">
+    <value>Reveal Ship Names</value>
+    <comment>建造中の艦名をネタバレする</comment>
+  </data>
+  <data name="Dockyard_TimeCompletion" xml:space="preserve">
+    <value>Completion Time</value>
+    <comment>完成時刻</comment>
+  </data>
+  <data name="Dockyard_TimeRemaining" xml:space="preserve">
+    <value>Remaining Time</value>
+    <comment>建造完了まで</comment>
+  </data>
+  <data name="Dockyard_Unused" xml:space="preserve">
+    <value>Empty</value>
+    <comment>未使用</comment>
+  </data>
+  <data name="Exped_NoExped" xml:space="preserve">
+    <value>Not on an Expedition.</value>
+    <comment>遠征に出ていません。</comment>
+  </data>
+  <data name="Exped_TimeCompletion" xml:space="preserve">
+    <value>Completion Time</value>
+    <comment>終了時刻</comment>
+  </data>
+  <data name="Exped_TimeRemaining" xml:space="preserve">
+    <value>Time Remaining</value>
+    <comment>艦隊帰投まで</comment>
+  </data>
+  <data name="Fleet_Exped" xml:space="preserve">
+    <value>This fleet is on an expedition.</value>
+    <comment>この艦隊は遠征中です。</comment>
+  </data>
+  <data name="Fleet_ExpedCompletion" xml:space="preserve">
+    <value> Completion Time:</value>
+    <comment> 完了時刻:</comment>
+  </data>
+  <data name="Fleet_ExpedRemaining" xml:space="preserve">
+    <value> Remaining Time:</value>
+    <comment> 帰投まで:</comment>
+  </data>
   <data name="MainWindow_Title" xml:space="preserve">
     <value>KanColle Viewer</value>
     <comment>提督業も忙しい！</comment>
@@ -164,5 +236,125 @@
   <data name="Monitor_Settings" xml:space="preserve">
     <value>Settings</value>
     <comment>設定</comment>
+  </data>
+  <data name="Notification_Disable" xml:space="preserve">
+    <value>No Notifications</value>
+    <comment>通知しない</comment>
+  </data>
+  <data name="Notification_EnableDock" xml:space="preserve">
+    <value>Notify Upon Completion</value>
+    <comment>建造完了時にトースト通知を表示する</comment>
+  </data>
+  <data name="Notification_EnableExped" xml:space="preserve">
+    <value>Notify Upon Completion</value>
+    <comment>遠征帰投時にトースト通知を表示する</comment>
+  </data>
+  <data name="Notification_EnableRepair" xml:space="preserve">
+    <value>Notify Upon Completion</value>
+    <comment>整備完了時にトースト通知を表示する</comment>
+  </data>
+  <data name="Notification_Individual" xml:space="preserve">
+    <value>Per-Dock Settings</value>
+    <comment>ドックごとに個別に設定する</comment>
+  </data>
+  <data name="Notification_IndividualExped" xml:space="preserve">
+    <value>Per-Fleet Settings</value>
+    <comment>艦隊ごとに個別に設定する</comment>
+  </data>
+  <data name="Notification_NotYet" xml:space="preserve">
+    <value>(planned)</value>
+    <comment>(未実装)</comment>
+  </data>
+  <data name="Notification_Settings" xml:space="preserve">
+    <value>Notifications</value>
+    <comment>通知設定</comment>
+  </data>
+  <data name="Notification_Win8" xml:space="preserve">
+    <value>(Windows 8+)</value>
+    <comment>(Windows 8 以降)</comment>
+  </data>
+  <data name="NotStarted" xml:space="preserve">
+    <value>Waiting for KanColle to start...</value>
+    <comment>艦これの開始を待っています...</comment>
+  </data>
+  <data name="Quests_NotYet" xml:space="preserve">
+    <value>Not Done Yet</value>
+    <comment>未実装です</comment>
+  </data>
+  <data name="Repairyard_DockedShip" xml:space="preserve">
+    <value>Docked Ship</value>
+    <comment>入渠中の艦</comment>
+  </data>
+  <data name="Repairyard_Locked" xml:space="preserve">
+    <value>Locked</value>
+    <comment>ロックされています</comment>
+  </data>
+  <data name="Repairyard_TimeCompletion" xml:space="preserve">
+    <value>Completion Time</value>
+    <comment>完了時刻</comment>
+  </data>
+  <data name="Repairyard_TimeRemaining" xml:space="preserve">
+    <value>Remaining Time</value>
+    <comment>整備完了まで</comment>
+  </data>
+  <data name="Repairyard_Unused" xml:space="preserve">
+    <value>Empty</value>
+    <comment>未使用</comment>
+  </data>
+  <data name="Settings_Browser" xml:space="preserve">
+    <value>Browser Controls</value>
+    <comment>ブラウザー操作</comment>
+  </data>
+  <data name="Settings_Language" xml:space="preserve">
+    <value>Language</value>
+    <comment>言語</comment>
+  </data>
+  <data name="Settings_LanguageEn" xml:space="preserve">
+    <value>英 語 — English</value>
+    <comment>英 語 — English</comment>
+  </data>
+  <data name="Settings_LanguageJa" xml:space="preserve">
+    <value>日本語 — Japanese</value>
+    <comment>日本語 — Japanese</comment>
+  </data>
+  <data name="Settings_Screenshot" xml:space="preserve">
+    <value>Screenshot Settings</value>
+    <comment>スクリーンショット設定</comment>
+  </data>
+  <data name="Settings_ScreenshotFolder" xml:space="preserve">
+    <value>Destination Folder  </value>
+    <comment>保存先フォルダー  </comment>
+  </data>
+  <data name="Settings_ScreenshotFolderPath" xml:space="preserve">
+    <value>Destination Folder Path</value>
+    <comment>保存先フォルダー パス</comment>
+  </data>
+  <data name="Exped_Complete" xml:space="preserve">
+    <value>Expedition Completed</value>
+    <comment>遠征完了</comment>
+  </data>
+  <data name="Exped_Return" xml:space="preserve">
+    <value>has returned from an expedition.</value>
+    <comment>が遠征から帰投しました。</comment>
+  </data>
+  <data name="Fleet_CanReSortie" xml:space="preserve">
+    <value>Ready to Sortie!</value>
+    <comment>出撃可能！</comment>
+  </data>
+  <data name="Repairyard_Complete" xml:space="preserve">
+    <value>Repairs Completed</value>
+    <comment>整備完了</comment>
+  </data>
+  <data name="Repairyard_Finished1" xml:space="preserve">
+    <value>Repairs in Dock #</value>
+    <comment>工廠第 </comment>
+  </data>
+  <data name="Repairyard_Finished2" xml:space="preserve">
+    <value> on</value>
+    <comment> ドックでの</comment>
+  </data>
+  <data name="Repairyard_Finished3" xml:space="preserve">
+    <value>have been completed.</value>
+    <comment>の整備が完了しました。</comment>
   </data>
 </root>
