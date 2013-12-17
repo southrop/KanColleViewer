@@ -274,8 +274,8 @@
   <data name="Notification_IndividualExped" xml:space="preserve">
     <value>艦隊ごとに個別に設定する</value>
   </data>
-  <data name="NotStarted" xml:space="preserve">
-    <value>艦これの開始を待っています...</value>
+  <data name="Status_NotStarted" xml:space="preserve">
+    <value>艦これの起動を待っています</value>
   </data>
   <data name="Quests_NotYet" xml:space="preserve">
     <value>未実装です</value>
@@ -348,5 +348,26 @@
   </data>
   <data name="Fleet_RepairRemaining" xml:space="preserve">
     <value> 完了まで: </value>
+  </data>
+  <data name="Fleet_SpeedHigh" xml:space="preserve">
+    <value>高速艦隊</value>
+  </data>
+  <data name="Fleet_SpeedLow" xml:space="preserve">
+    <value>低速艦隊</value>
+  </data>
+  <data name="Status_AirSuperiority" xml:space="preserve">
+    <value>制空戦力:</value>
+  </data>
+  <data name="Status_AvgLevel" xml:space="preserve">
+    <value>平均レベル:</value>
+  </data>
+  <data name="Status_Ready" xml:space="preserve">
+    <value>準備完了</value>
+  </data>
+  <data name="Status_ScrnFailed" xml:space="preserve">
+    <value>スクリーンショットの保存に失敗しました: </value>
+  </data>
+  <data name="Status_ScrnSaved" xml:space="preserve">
+    <value>スクリーンショットを保存しました: </value>
   </data>
 </root>

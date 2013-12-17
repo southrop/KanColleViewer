@@ -7,21 +7,25 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 			 xmlns:p="clr-namespace:Grabacr07.KanColleViewer.Properties"
              xmlns:livet="http://schemas.livet-mvvm.net/2011/wpf"
-             xmlns:fleets="clr-namespace:Grabacr07.KanColleViewer.ViewModels.Fleets"
              xmlns:controls="clr-namespace:Grabacr07.KanColleViewer.Views.Controls"
              xmlns:views="clr-namespace:Grabacr07.KanColleViewer.Views"
              xmlns:vm="clr-namespace:Grabacr07.KanColleViewer.ViewModels"
              xmlns:behaviors="clr-namespace:Grabacr07.KanColleViewer.Views.Behaviors"
+			 xmlns:contents="clr-namespace:Grabacr07.KanColleViewer.ViewModels.Contents"
+			 xmlns:fleets1="clr-namespace:Grabacr07.KanColleViewer.ViewModels.Contents.Fleets"
              mc:Ignorable="d"
              d:DesignWidth="800"
-             d:DesignHeight="300"
-             d:DataContext="{d:DesignInstance fleets:FleetsViewModel}"
+			 d:DesignHeight="400"
+			 d:DataContext="{d:DesignInstance fleets1:FleetsViewModel}"
              SnapsToDevicePixels="True">
+
 	<Grid d:DataContext="{d:DesignData /SampleData/FleetsViewModelSampleData.xaml}">
 		<Grid.RowDefinitions>
 			<RowDefinition Height="Auto" />
 			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
 			<RowDefinition Height="*" />
+			<RowDefinition Height="Auto" />
 		</Grid.RowDefinitions>
 
 		<ListBox ItemsSource="{Binding Fleets}"
@@ -75,7 +79,7 @@
 		                Margin="9,3"
 		                Content="{Binding SelectedFleet.State}">
 			<ContentControl.Resources>
-				<DataTemplate DataType="{x:Type vm:ExpeditionViewModel}">
+				<DataTemplate DataType="{x:Type fleets1:ExpeditionViewModel}">
 					<Border Padding="10,5"
 					        Background="#FF204080">
 						<TextBlock Foreground="{DynamicResource ActiveForegroundBrushKey}">
@@ -87,7 +91,7 @@
 						</TextBlock>
 					</Border>
 				</DataTemplate>
-				<DataTemplate DataType="{x:Type fleets:ReSortieBarViewModel}">
+				<DataTemplate DataType="{x:Type fleets1:ReSortieBarViewModel}">
 					<Border x:Name="Border"
 					        Padding="10,5"
 					        Background="#FF5A2020">
@@ -107,7 +111,7 @@
 						</DataTrigger>
 					</DataTemplate.Triggers>
 				</DataTemplate>
-				<DataTemplate DataType="{x:Type fleets:RepairingBarViewModel}">
+				<DataTemplate DataType="{x:Type fleets1:RepairingBarViewModel}">
 					<Border x:Name="Border"
 					        Padding="10,5"
 					        Background="#FF5A4020">
@@ -121,10 +125,11 @@
 			</ContentControl.Resources>
 		</ContentControl>
 
-		<Grid Grid.Row="2"
+		<Grid Grid.Row="3"
 		      DataContext="{Binding SelectedFleet}"
 		      d:DataContext="{d:DesignData /SampleData/FleetViewModelSampleData.xaml}">
 			<ItemsControl ItemsSource="{Binding Ships}"
+						  Margin="0,0,0,10"
 			              Grid.IsSharedSizeScope="True">
 				<ItemsControl.ItemTemplate>
 					<DataTemplate>

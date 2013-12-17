@@ -194,7 +194,7 @@
     <comment>提督業も忙しい！</comment>
   </data>
   <data name="Monitor_ConstructionDock" xml:space="preserve">
-    <value>Building Dock</value>
+    <value>Construction</value>
     <comment>建造ドック</comment>
   </data>
   <data name="Monitor_Expeditions" xml:space="preserve">
@@ -230,7 +230,7 @@
     <comment>任務</comment>
   </data>
   <data name="Monitor_RepairDock" xml:space="preserve">
-    <value>Repair Dock</value>
+    <value>Repair</value>
     <comment>入渠ドック</comment>
   </data>
   <data name="Monitor_Settings" xml:space="preserve">
@@ -273,9 +273,9 @@
     <value>(Windows 8+)</value>
     <comment>(Windows 8 以降)</comment>
   </data>
-  <data name="NotStarted" xml:space="preserve">
-    <value>Waiting for KanColle to start...</value>
-    <comment>艦これの開始を待っています...</comment>
+  <data name="Status_NotStarted" xml:space="preserve">
+    <value>Waiting for KanColle to start</value>
+    <comment>艦これの起動を待っています</comment>
   </data>
   <data name="Quests_NotYet" xml:space="preserve">
     <value>Not Done Yet</value>
@@ -420,5 +420,33 @@
   <data name="Fleet_RepairRemaining" xml:space="preserve">
     <value> Remaining Time: </value>
     <comment> 完了まで: </comment>
+  </data>
+  <data name="Fleet_SpeedHigh" xml:space="preserve">
+    <value>Fast Fleet</value>
+    <comment>高速艦隊</comment>
+  </data>
+  <data name="Fleet_SpeedLow" xml:space="preserve">
+    <value>Slow Fleet</value>
+    <comment>低速艦隊</comment>
+  </data>
+  <data name="Status_AirSuperiority" xml:space="preserve">
+    <value>Air Superiority Potential:</value>
+    <comment>制空戦力:</comment>
+  </data>
+  <data name="Status_AvgLevel" xml:space="preserve">
+    <value>Average Level:</value>
+    <comment>平均レベル:</comment>
+  </data>
+  <data name="Status_Ready" xml:space="preserve">
+    <value>Ready</value>
+    <comment>準備完了</comment>
+  </data>
+  <data name="Status_ScrnFailed" xml:space="preserve">
+    <value>Screenshot save failed: </value>
+    <comment>スクリーンショットの保存に失敗しました: </comment>
+  </data>
+  <data name="Status_ScrnSaved" xml:space="preserve">
+    <value>Screenshot saved: </value>
+    <comment>スクリーンショットを保存しました: </comment>
   </data>
 </root>

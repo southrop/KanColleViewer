@@ -394,6 +394,24 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 高速艦隊.
+        /// </summary>
+        public static string Fleet_SpeedHigh {
+            get {
+                return ResourceManager.GetString("Fleet_SpeedHigh", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 低速艦隊.
+        /// </summary>
+        public static string Fleet_SpeedLow {
+            get {
+                return ResourceManager.GetString("Fleet_SpeedLow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
         public static System.Drawing.Icon kancolle {
@@ -593,15 +611,6 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 艦これの開始を待っています....
-        /// </summary>
-        public static string NotStarted {
-            get {
-                return ResourceManager.GetString("NotStarted", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to 未実装です.
         /// </summary>
         public static string Quests_NotYet {
@@ -751,6 +760,60 @@ namespace Grabacr07.KanColleViewer.Properties {
         public static string Settings_ScreenshotFolderPath {
             get {
                 return ResourceManager.GetString("Settings_ScreenshotFolderPath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 制空戦力:.
+        /// </summary>
+        public static string Status_AirSuperiority {
+            get {
+                return ResourceManager.GetString("Status_AirSuperiority", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 平均レベル:.
+        /// </summary>
+        public static string Status_AvgLevel {
+            get {
+                return ResourceManager.GetString("Status_AvgLevel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 艦これの起動を待っています.
+        /// </summary>
+        public static string Status_NotStarted {
+            get {
+                return ResourceManager.GetString("Status_NotStarted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 準備完了.
+        /// </summary>
+        public static string Status_Ready {
+            get {
+                return ResourceManager.GetString("Status_Ready", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to スクリーンショットの保存に失敗しました: .
+        /// </summary>
+        public static string Status_ScrnFailed {
+            get {
+                return ResourceManager.GetString("Status_ScrnFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to スクリーンショットを保存しました: .
+        /// </summary>
+        public static string Status_ScrnSaved {
+            get {
+                return ResourceManager.GetString("Status_ScrnSaved", resourceCulture);
             }
         }
     }
