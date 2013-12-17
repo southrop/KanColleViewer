@@ -51,3 +51,7 @@ so the URL looks something like this:
 ```
 
 After starting up the program, you can change the language by going to Settings and then selecting one of the radio button options.
+
+### License
+
+MIT License
