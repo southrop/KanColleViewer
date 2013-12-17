@@ -27,9 +27,9 @@ namespace Grabacr07.KanColleViewer.ViewModels.Contents.Fleets
 			{
 				return Properties.Resources.Fleet_Docked;
 			}
-			var remaining = dock.CompleteTime.Value - DateTimeOffset.Now - TimeSpan.FromMinutes(1.0);
+			var remaining = dock.CompleteTime.Value.LocalDateTime - DateTimeOffset.Now - TimeSpan.FromMinutes(1.0);
 			return string.Format(@"{3}{4}{0:MM/dd HH\:mm}{5}{1}:{2:mm\:ss}",
-				dock.CompleteTime.Value, (int) remaining.TotalHours, remaining, Properties.Resources.Fleet_Docked, Properties.Resources.Fleet_RepairCompletion, Properties.Resources.Fleet_RepairRemaining);
+				dock.CompleteTime.Value.LocalDateTime, (int) remaining.TotalHours, remaining, Properties.Resources.Fleet_Docked, Properties.Resources.Fleet_RepairCompletion, Properties.Resources.Fleet_RepairRemaining);
 		}
 	}
 }
