@@ -3,13 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Resources;
 using Grabacr07.KanColleViewer.Model;
 using Grabacr07.KanColleWrapper;
 using Grabacr07.KanColleWrapper.Models;
+using Grabacr07.KanColleViewer.Properties;
 using Livet;
 using Livet.Behaviors.ControlBinding.OneWay;
 using Livet.EventListeners;
 using Livet.Messaging.Windows;
+using System.Globalization;
+using System.Threading;
 
 namespace Grabacr07.KanColleViewer.ViewModels.Fleets
 {
@@ -126,9 +130,10 @@ namespace Grabacr07.KanColleViewer.ViewModels.Fleets
 
 		private void UpdateMessage()
 		{
+			ResourceManager rm = new ResourceManager("Grabacr07.KanColleViewer.Properties.Resources", typeof(Resources).Assembly);
 			if (this.source.CanReSortie)
 			{
-				this.Message = "出撃可能！";
+				this.Message = Properties.Resources.Fleet_CanReSortie;
 				this.CanReSortie = true;
 				return;
 			}
@@ -137,24 +142,24 @@ namespace Grabacr07.KanColleViewer.ViewModels.Fleets
 
 			if (this.source.Reason.HasFlag(CanReSortieReason.Wounded))
 			{
-				list.Add("中破以上の艦娘");
+				list.Add(Properties.Resources.Fleet_ConDamage);
 			}
 			if (this.source.Reason.HasFlag(CanReSortieReason.LackForResources))
 			{
-				list.Add("未補給の艦娘");
+				list.Add(Properties.Resources.Fleet_ConSupply);
 			}
 			if (this.source.Reason.HasFlag(CanReSortieReason.BadCondition))
 			{
-				list.Add("疲労中の艦娘");
+				list.Add(Properties.Resources.Fleet_ConFatigue);
 			}
 
-			this.Message = string.Format("艦隊に{0}がいます。", list.ToString("・"));
+			this.Message = Properties.Resources.Fleet_Condition1 + list.ToString(Properties.Resources.Fleet_ConditionSeparator) + Properties.Resources.Fleet_Condition2;
 			this.CanReSortie = false;
 		}
 
 		private void UpdateRemaining()
 		{
-			this.Remaining = this.source.Remaining.HasValue ? "再出撃までの目安: " + this.source.Remaining.Value.ToString(@"mm\:ss") : "";
+			this.Remaining = this.source.Remaining.HasValue ? Properties.Resources.Fleet_ConRemaining + this.source.Remaining.Value.ToString(@"mm\:ss") : "";
 		}
 	}
 }

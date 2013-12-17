@@ -91,9 +91,18 @@ namespace Grabacr07.KanColleViewer.ViewModels.Docks
 				{
 					if (this.IsNotifyCompleted)
 					{
+						string _shipname;
+						if (this.CanDisplayShipName)
+						{
+							_shipname = this.Ship;
+						}
+						else
+						{
+							_shipname = Properties.Resources.Dockyard_CantShow;
+						}
 						Toast.Show(
-							"建造完了",
-							string.Format("工廠第 {0} ドックでの{1}の建造が完了しました。", this.Id, this.CanDisplayShipName ? "「" + this.Ship + "」" : "艦娘"),
+							Properties.Resources.Dockyard_Complete1,
+							Properties.Resources.Dockyard_Finished1 + this.Id + Properties.Resources.Dockyard_Finished2 + _shipname + Properties.Resources.Dockyard_Finished3,
 							() => this.Messenger.Raise(new WindowActionMessage(WindowAction.Active, "Window/Activate")));
 					}
 				};

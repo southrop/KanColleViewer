@@ -106,6 +106,15 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 「艦娘」.
+        /// </summary>
+        public static string Dockyard_CantShow {
+            get {
+                return ResourceManager.GetString("Dockyard_CantShow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 完成！.
         /// </summary>
         public static string Dockyard_Complete {
@@ -115,11 +124,47 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 建造完了.
+        /// </summary>
+        public static string Dockyard_Complete1 {
+            get {
+                return ResourceManager.GetString("Dockyard_Complete1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 表示設定.
         /// </summary>
         public static string Dockyard_DisplaySettings {
             get {
                 return ResourceManager.GetString("Dockyard_DisplaySettings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 工廠第 .
+        /// </summary>
+        public static string Dockyard_Finished1 {
+            get {
+                return ResourceManager.GetString("Dockyard_Finished1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  ドックでの.
+        /// </summary>
+        public static string Dockyard_Finished2 {
+            get {
+                return ResourceManager.GetString("Dockyard_Finished2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to の建造が完了しました。.
+        /// </summary>
+        public static string Dockyard_Finished3 {
+            get {
+                return ResourceManager.GetString("Dockyard_Finished3", resourceCulture);
             }
         }
         
@@ -187,11 +232,20 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to が遠征から帰投しました。.
+        ///   Looks up a localized string similar to 」が遠征から帰投しました。.
         /// </summary>
         public static string Exped_Return {
             get {
                 return ResourceManager.GetString("Exped_Return", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 「.
+        /// </summary>
+        public static string Exped_Return0 {
+            get {
+                return ResourceManager.GetString("Exped_Return0", resourceCulture);
             }
         }
         
@@ -223,6 +277,78 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 中破以上の艦娘.
+        /// </summary>
+        public static string Fleet_ConDamage {
+            get {
+                return ResourceManager.GetString("Fleet_ConDamage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 艦隊に.
+        /// </summary>
+        public static string Fleet_Condition1 {
+            get {
+                return ResourceManager.GetString("Fleet_Condition1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to がいます。.
+        /// </summary>
+        public static string Fleet_Condition2 {
+            get {
+                return ResourceManager.GetString("Fleet_Condition2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ・.
+        /// </summary>
+        public static string Fleet_ConditionSeparator {
+            get {
+                return ResourceManager.GetString("Fleet_ConditionSeparator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 疲労中の艦娘.
+        /// </summary>
+        public static string Fleet_ConFatigue {
+            get {
+                return ResourceManager.GetString("Fleet_ConFatigue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 再出撃までの目安: .
+        /// </summary>
+        public static string Fleet_ConRemaining {
+            get {
+                return ResourceManager.GetString("Fleet_ConRemaining", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 未補給の艦娘.
+        /// </summary>
+        public static string Fleet_ConSupply {
+            get {
+                return ResourceManager.GetString("Fleet_ConSupply", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 艦隊に入渠中の艦娘がいます。.
+        /// </summary>
+        public static string Fleet_Docked {
+            get {
+                return ResourceManager.GetString("Fleet_Docked", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to この艦隊は遠征中です。.
         /// </summary>
         public static string Fleet_Exped {
@@ -246,6 +372,24 @@ namespace Grabacr07.KanColleViewer.Properties {
         public static string Fleet_ExpedRemaining {
             get {
                 return ResourceManager.GetString("Fleet_ExpedRemaining", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  完了時刻: .
+        /// </summary>
+        public static string Fleet_RepairCompletion {
+            get {
+                return ResourceManager.GetString("Fleet_RepairCompletion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  完了まで: .
+        /// </summary>
+        public static string Fleet_RepairRemaining {
+            get {
+                return ResourceManager.GetString("Fleet_RepairRemaining", resourceCulture);
             }
         }
         
@@ -494,7 +638,7 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to  ドックでの.
+        ///   Looks up a localized string similar to  ドックでの「.
         /// </summary>
         public static string Repairyard_Finished2 {
             get {
@@ -503,7 +647,7 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to の整備が完了しました。.
+        ///   Looks up a localized string similar to 」の整備が完了しました。.
         /// </summary>
         public static string Repairyard_Finished3 {
             get {

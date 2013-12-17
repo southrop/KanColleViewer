@@ -31,6 +31,7 @@ namespace Grabacr07.KanColleViewer
 
 			if (Settings.Current.English)
 			{
+				CultureInfo.DefaultThreadCurrentUICulture = new CultureInfo("en-US");
 				Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
 			}
 

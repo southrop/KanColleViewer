@@ -174,7 +174,7 @@
     <comment>終了時刻</comment>
   </data>
   <data name="Exped_TimeRemaining" xml:space="preserve">
-    <value>Time Remaining</value>
+    <value>Remaining Time</value>
     <comment>艦隊帰投まで</comment>
   </data>
   <data name="Fleet_Exped" xml:space="preserve">
@@ -334,8 +334,8 @@
     <comment>遠征完了</comment>
   </data>
   <data name="Exped_Return" xml:space="preserve">
-    <value>has returned from an expedition.</value>
-    <comment>が遠征から帰投しました。</comment>
+    <value> has returned from an expedition.</value>
+    <comment>」が遠征から帰投しました。</comment>
   </data>
   <data name="Fleet_CanReSortie" xml:space="preserve">
     <value>Ready to Sortie!</value>
@@ -350,11 +350,75 @@
     <comment>工廠第 </comment>
   </data>
   <data name="Repairyard_Finished2" xml:space="preserve">
-    <value> on</value>
-    <comment> ドックでの</comment>
+    <value> on </value>
+    <comment> ドックでの「</comment>
   </data>
   <data name="Repairyard_Finished3" xml:space="preserve">
-    <value>have been completed.</value>
-    <comment>の整備が完了しました。</comment>
+    <value> have been completed.</value>
+    <comment>」の整備が完了しました。</comment>
+  </data>
+  <data name="Exped_Return0" xml:space="preserve">
+    <value />
+    <comment>「</comment>
+  </data>
+  <data name="Dockyard_Complete1" xml:space="preserve">
+    <value>Construction Completed</value>
+    <comment>建造完了</comment>
+  </data>
+  <data name="Dockyard_Finished1" xml:space="preserve">
+    <value>Construction in Dock #</value>
+    <comment>工廠第</comment>
+  </data>
+  <data name="Dockyard_Finished2" xml:space="preserve">
+    <value> of </value>
+    <comment> ドックでの</comment>
+  </data>
+  <data name="Dockyard_Finished3" xml:space="preserve">
+    <value> has been completed.</value>
+    <comment>の建造が完了しました。</comment>
+  </data>
+  <data name="Dockyard_CantShow" xml:space="preserve">
+    <value>a Ship</value>
+    <comment>「艦娘」</comment>
+  </data>
+  <data name="Fleet_ConDamage" xml:space="preserve">
+    <value>are damaged</value>
+    <comment>中破以上の艦娘</comment>
+  </data>
+  <data name="Fleet_Condition1" xml:space="preserve">
+    <value>There are ships in your fleet that </value>
+    <comment>艦隊に</comment>
+  </data>
+  <data name="Fleet_Condition2" xml:space="preserve">
+    <value>.</value>
+    <comment>がいます。</comment>
+  </data>
+  <data name="Fleet_ConditionSeparator" xml:space="preserve">
+    <value>, </value>
+    <comment>・</comment>
+  </data>
+  <data name="Fleet_ConFatigue" xml:space="preserve">
+    <value>are fatigued</value>
+    <comment>疲労中の艦娘</comment>
+  </data>
+  <data name="Fleet_ConRemaining" xml:space="preserve">
+    <value>Time until they're ready again: </value>
+    <comment>再出撃までの目安: </comment>
+  </data>
+  <data name="Fleet_ConSupply" xml:space="preserve">
+    <value>need resupplying</value>
+    <comment>未補給の艦娘</comment>
+  </data>
+  <data name="Fleet_Docked" xml:space="preserve">
+    <value>There are ships in your fleet currently docked for repairs.</value>
+    <comment>艦隊に入渠中の艦娘がいます。</comment>
+  </data>
+  <data name="Fleet_RepairCompletion" xml:space="preserve">
+    <value> Completion Time: </value>
+    <comment> 完了時刻: </comment>
+  </data>
+  <data name="Fleet_RepairRemaining" xml:space="preserve">
+    <value> Remaining Time: </value>
+    <comment> 完了まで: </comment>
   </data>
 </root>

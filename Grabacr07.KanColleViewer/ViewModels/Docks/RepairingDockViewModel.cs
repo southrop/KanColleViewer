@@ -70,8 +70,8 @@ namespace Grabacr07.KanColleViewer.ViewModels.Docks
 					if (this.IsNotifyCompleted)
 					{
 						Toast.Show(
-							"整備完了",
-							string.Format("入渠第 {0} ドックでの「{1}」の整備が完了しました。", this.Id, this.Ship),
+							Properties.Resources.Repairyard_Complete,
+							Properties.Resources.Repairyard_Finished1 + this.Id + Properties.Resources.Repairyard_Finished2 + this.Ship + Properties.Resources.Repairyard_Finished3,
 							() => this.Messenger.Raise(new WindowActionMessage(WindowAction.Active, "Window/Activate")));
 					}
 				};

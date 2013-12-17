@@ -284,7 +284,7 @@
     <value>遠征完了</value>
   </data>
   <data name="Exped_Return" xml:space="preserve">
-    <value>が遠征から帰投しました。</value>
+    <value>」が遠征から帰投しました。</value>
   </data>
   <data name="Fleet_CanReSortie" xml:space="preserve">
     <value>出撃可能！</value>
@@ -296,9 +296,57 @@
     <value>入渠第 </value>
   </data>
   <data name="Repairyard_Finished2" xml:space="preserve">
-    <value> ドックでの</value>
+    <value> ドックでの「</value>
   </data>
   <data name="Repairyard_Finished3" xml:space="preserve">
-    <value>の整備が完了しました。</value>
+    <value>」の整備が完了しました。</value>
+  </data>
+  <data name="Exped_Return0" xml:space="preserve">
+    <value>「</value>
+  </data>
+  <data name="Dockyard_Complete1" xml:space="preserve">
+    <value>建造完了</value>
+  </data>
+  <data name="Dockyard_Finished1" xml:space="preserve">
+    <value>工廠第 </value>
+  </data>
+  <data name="Dockyard_Finished2" xml:space="preserve">
+    <value> ドックでの</value>
+  </data>
+  <data name="Dockyard_Finished3" xml:space="preserve">
+    <value>の建造が完了しました。</value>
+  </data>
+  <data name="Dockyard_CantShow" xml:space="preserve">
+    <value>「艦娘」</value>
+  </data>
+  <data name="Fleet_ConDamage" xml:space="preserve">
+    <value>中破以上の艦娘</value>
+  </data>
+  <data name="Fleet_Condition1" xml:space="preserve">
+    <value>艦隊に</value>
+  </data>
+  <data name="Fleet_Condition2" xml:space="preserve">
+    <value>がいます。</value>
+  </data>
+  <data name="Fleet_ConditionSeparator" xml:space="preserve">
+    <value>・</value>
+  </data>
+  <data name="Fleet_ConFatigue" xml:space="preserve">
+    <value>疲労中の艦娘</value>
+  </data>
+  <data name="Fleet_ConRemaining" xml:space="preserve">
+    <value>再出撃までの目安: </value>
+  </data>
+  <data name="Fleet_ConSupply" xml:space="preserve">
+    <value>未補給の艦娘</value>
+  </data>
+  <data name="Fleet_Docked" xml:space="preserve">
+    <value>艦隊に入渠中の艦娘がいます。</value>
+  </data>
+  <data name="Fleet_RepairCompletion" xml:space="preserve">
+    <value> 完了時刻: </value>
+  </data>
+  <data name="Fleet_RepairRemaining" xml:space="preserve">
+    <value> 完了まで: </value>
   </data>
 </root>
